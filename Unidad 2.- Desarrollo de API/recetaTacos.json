@@ -1,0 +1,114 @@
+[
+    {
+        "id": "0001",
+        "tipo": "taco",
+        "nombre": "Taco al pastor",
+        "precio": 22.50,
+        "ingredientes": {
+            "proteína": {
+                "nombre": "Cerdo adobado",
+                "preparación": "Cocinado en trompo"
+            },
+            "salsa": {
+                "nombre": "Salsa roja",
+                "pico": "Picante"
+            },
+            "acompañamientos": [
+                {
+                    "nombre": "Piña",
+                    "cantidad": "1 cucharada",
+                    "ingredientes": ["Piña fresca", "Canela"]
+                },
+                {
+                    "nombre": "Cebolla y cilantro",
+                    "cantidad": "1 cucharada",
+                    "ingredientes": ["Cebolla blanca", "Cilantro", "Limón"]
+                }
+            ]
+        }
+    },
+    {
+        "id": "0002",
+        "tipo": "taco",
+        "nombre": "Taco de carnitas",
+        "precio": 24.00,
+        "ingredientes": {
+            "proteína": {
+                "nombre": "Cerdo",
+                "preparación": "Frito en manteca"
+            },
+            "salsa": {
+                "nombre": "Salsa verde",
+                "pico": "Medio"
+            },
+            "acompañamientos": [
+                {
+                    "nombre": "Cebolla curtida",
+                    "cantidad": "1 cucharada",
+                    "ingredientes": ["Cebolla morada", "Vinagre", "Orégano"]
+                },
+                {
+                    "nombre": "Chicharrón",
+                    "cantidad": "1 puñado",
+                    "ingredientes": ["Piel de cerdo frita", "Sal"]
+                }
+            ]
+        }
+    },
+    {
+        "id": "0003",
+        "tipo": "taco",
+        "nombre": "Taco de barbacoa",
+        "precio": 28.00,
+        "ingredientes": {
+            "proteína": {
+                "nombre": "Carne de borrego",
+                "preparación": "Cocido en hoyo"
+            },
+            "salsa": {
+                "nombre": "Salsa borracha",
+                "pico": "Picante"
+            },
+            "acompañamientos": [
+                {
+                    "nombre": "Consomé",
+                    "cantidad": "1/2 taza",
+                    "ingredientes": ["Caldo de barbacoa", "Cebolla", "Cilantro"]
+                },
+                {
+                    "nombre": "Limón y cebolla",
+                    "cantidad": "1 cucharada",
+                    "ingredientes": ["Limón", "Cebolla blanca"]
+                }
+            ]
+        }
+    },
+    {
+        "id": "0004",
+        "tipo": "taco",
+        "nombre": "Taco de pescado",
+        "precio": 30.00,
+        "ingredientes": {
+            "proteína": {
+                "nombre": "Filete de pescado",
+                "preparación": "Empanizado y frito"
+            },
+            "salsa": {
+                "nombre": "Salsa de chipotle",
+                "pico": "Suave"
+            },
+            "acompañamientos": [
+                {
+                    "nombre": "Repollo morado",
+                    "cantidad": "1/2 taza",
+                    "ingredientes": ["Repollo", "Mayonesa", "Vinagre"]
+                },
+                {
+                    "nombre": "Crema",
+                    "cantidad": "1 cucharada",
+                    "ingredientes": ["Crema ácida", "Limón", "Sal"]
+                }
+            ]
+        }
+    }
+]
