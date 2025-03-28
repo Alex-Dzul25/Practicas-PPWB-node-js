@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Ingeniería en Sistemas Computacionales</title>
+</head>
+<body>
+    <h1>Ingeniería en Sistemas</h1> 
+    <form id="Form" class="buttons">
+        <button type="button" data-id="0001">💻</button>
+        <button type="button" data-id="0002">🛜</button>
+        <button type="button" data-id="0003">🧠</button>
+        <button type="button" data-id="0004">🌐</button>
+    </form>
+    <div id="Container"></div>
+    <script>
+        document.querySelectorAll("#Form button").forEach(button => {
+          button.addEventListener("click", async (event) => {
+            const id = event.target.getAttribute("data-id");
+            
+            const response = await fetch(`/tema/${id}`);
+            const tema = await response.json();
+    
+            const contenedor = document.getElementById("Container"); 
+            if (tema.error) {
+              contenedor.innerHTML = "<h2>Tema no encontrado</h2>";
+            } else {
+              contenedor.innerHTML = `
+                <h2>${tema.nombre}</h2>
+                <p>${tema.descripcion}</p>
+                <h3>Palabras claves: ${tema.palabrasClaves.join(", ")}</h3>
+                <h3>Prácticas recomendadas:</h3>
+                <ul id="practicasLista">
+                  ${tema.practicas.map(practica => `
+                    <li>
+                      <strong>${practica.titulo}</strong><br>
+                      ${practica.descripcion}<br>
+                      <em>Objetivo: ${practica.objetivo}</em>
+                    </li>
+                  `).join("")}
+                </ul>`;
+            }
+          });
+        });
+      </script>
+</body>
+</html>
