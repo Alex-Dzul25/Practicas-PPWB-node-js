@@ -9,7 +9,7 @@ const temasJSON = `[
         "id": "0001",
         "nombre": "Programación Lógica y Funcional",
         "descripcion": "Paradigmas de programación basados en lógica matemática y funciones puras.",
-        "palabrasClaves": ["Prolog", "Haskell", "recursión", "inmutabilidad", "pattern matching"],
+        "palabrasClaves": ["Python", "Prolog", "recursión", "inmutabilidad", "cl"],
         "practicas": [
             {
                 "titulo": "Resolución de problemas lógicos",
